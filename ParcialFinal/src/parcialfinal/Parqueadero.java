@@ -11,18 +11,18 @@ package parcialfinal;
  */
 public class Parqueadero {
     
-    
-    public void ingresarvehiculo(){
+    Vehiculo Mivehiculo
+    public int ingresarvehiculo(){
      System.out.println("El vehiculo ha sido ingresado");
         
         
-      
+      return 5;
     }
-    public void retirarvehiculo(){
+    public int retirarvehiculo(){
         
         
          System.out.println("El vehiculo ha sido retirado");
-         
+         return 7;
     }
 public int consultarcupos(){
     

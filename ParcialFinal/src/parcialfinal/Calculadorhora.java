@@ -5,13 +5,20 @@
  */
 package parcialfinal;
 
+import java.util.Calendar;
+
 /**
  *
  * @author Estudiantes
  */
 public class Calculadorhora {
     
-    public int calcularhora(){
-      return 5;  
+    public void calcularhora(){
+        Calendar calendario = Calendar.getInstance();
+        int hora, minutos;
+        hora =calendario.get(Calendar.HOUR_OF_DAY);
+        minutos = calendario.get(Calendar.MINUTE);
+     System.out.println(hora + ":" + minutos);
+     
     }
 }
