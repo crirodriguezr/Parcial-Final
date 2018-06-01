@@ -10,25 +10,28 @@ package parcialfinal;
  * @author Estudiantes
  */
 public class Parqueadero {
-    
-    Vehiculo Mivehiculo
+     Calculadorhora Micalculadorh = new Calculadorhora();
+    Vehiculo Mivehiculo = new Vehiculo();
+    int vehiculo[] = new int[100];
+    int i;
     public int ingresarvehiculo(){
-     System.out.println("El vehiculo ha sido ingresado");
-        
-        
-      return 5;
+       for ( i=0; i < vehiculo.length; i++){
+       }
+        System.out.println("el vehiculo ha sido ingresado");
+      return i-1;
+       
     }
     public int retirarvehiculo(){
+        int Vp = ((Micalculadorh.calcularhora()+200)-Micalculadorh.calcularhora())*50;
         
-        
-         System.out.println("El vehiculo ha sido retirado");
-         return 7;
+         System.out.println("el vehiculo ha sido retirado, por favor cancelar");
+         return Vp;
     }
 public int consultarcupos(){
-    
+    int Cd=i+99 ;
     
      System.out.println("El numero de cupos disponibles es");
-    return 5;    
+    return Cd;    
 }
 }
     

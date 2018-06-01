@@ -13,12 +13,12 @@ import java.util.Calendar;
  */
 public class Calculadorhora {
     
-    public void calcularhora(){
+    public int calcularhora(){
         Calendar calendario = Calendar.getInstance();
         int hora, minutos;
         hora =calendario.get(Calendar.HOUR_OF_DAY);
         minutos = calendario.get(Calendar.MINUTE);
-     System.out.println(hora + ":" + minutos);
-     
+        int horaenminutos = hora*60;
+     return horaenminutos+minutos;
     }
 }

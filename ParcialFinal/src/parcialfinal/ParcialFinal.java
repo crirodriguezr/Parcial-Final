@@ -5,6 +5,7 @@
  */
 package parcialfinal;
 
+import java.util.Calendar;
 import java.util.Scanner;
 
 /**
@@ -17,10 +18,15 @@ public class ParcialFinal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-  Calculadorhora Micalculadorh = new Calculadorhora();
+ 
   Parqueadero Miparqueadero = new Parqueadero();
         Scanner Miscanner= new Scanner(System.in);
-        System.out.println("------------BIENVENIDOS A MI PARQUEADERO------------"+Micalculadorh.calcularhora());
+        Calendar calendario = Calendar.getInstance();
+        int hora, minutos;
+        hora =calendario.get(Calendar.HOUR_OF_DAY);
+        minutos = calendario.get(Calendar.MINUTE);
+        
+        System.out.println("------------BIENVENIDOS A MI PARQUEADERO------------"+" "+" "+hora+":"+minutos);
         System.out.println(" ");
         System.out.println("ingresa 1 si desea ingresar un vehiculo");
          System.out.println("ingresa 2 si deseas retirar un vehiculo");
@@ -29,6 +35,7 @@ public class ParcialFinal {
         switch(opcion){
             case 1:
                 System.out.println(Miparqueadero.ingresarvehiculo() );
+                System.out.println("cupos disponibles");
                 break;
             case 2:
                 System.out.println(Miparqueadero.retirarvehiculo());
