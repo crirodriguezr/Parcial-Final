@@ -11,4 +11,25 @@ package parcialfinal;
  */
 public class Parqueadero {
     
+    
+    public void ingresarvehiculo(){
+     System.out.println("El vehiculo ha sido ingresado");
+        
+        
+      
+    }
+    public void retirarvehiculo(){
+        
+        
+         System.out.println("El vehiculo ha sido retirado");
+         
+    }
+public int consultarcupos(){
+    
+    
+     System.out.println("El numero de cupos disponibles es");
+    return 5;    
 }
+}
+    
+

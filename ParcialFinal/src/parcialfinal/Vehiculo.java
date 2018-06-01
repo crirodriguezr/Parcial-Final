@@ -10,5 +10,31 @@ package parcialfinal;
  * @author Estudiantes
  */
 public class Vehiculo implements Ivehiculo {
+      
+       private String placa;
+           private String propietario;
+           private float cilindraje;
+
+    
+       @Override
+    public void registrarse() {
+       
+    }
+
+       @Override
+    public void salir() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
+       @Override
+    public void arrancar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+       @Override
+    public void frenar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

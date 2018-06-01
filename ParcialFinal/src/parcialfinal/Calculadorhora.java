@@ -9,15 +9,9 @@ package parcialfinal;
  *
  * @author Estudiantes
  */
-public interface Ivehiculo {
+public class Calculadorhora {
     
-      
-           
-           public void registrarse();
-           public void salir();
-           public void arrancar();
-           public void frenar();
-           
-            
-           
+    public int calcularhora(){
+      return 5;  
+    }
 }
